@@ -410,6 +410,7 @@ function saveUserData()
 // loadUserData loads the data saved on localStorage and fills the tiles with older answers. this only happens if the day is today.
 function loadUserData()
 {
+    return;
     //because localStorage only saves strings.
     let savedDateString = localStorage.getItem( 'userDate' );
     let savedDate = new Date( savedDateString );

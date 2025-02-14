@@ -456,9 +456,8 @@ function compareLetters( letterA, letterB )
 function countDownTimer()
 {
     var todaysDate = new Date();
-    todaysDate.setDate( todaysDate.getDate() + 1 );
-    todaysDate.setHours( 0, 0, 0, 0 );
-    var countDownDate = todaysDate.getTime();
+    todaysDate.setDate( todaysDate.getDate() );
+    var countDownDate = todaysDate.getTime() + ( 5 * 60 * 1000 );
 
     // Update the count down every 1 second
     var x = setInterval( function ()

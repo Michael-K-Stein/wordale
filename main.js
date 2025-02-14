@@ -43,7 +43,7 @@ function pickWord()
     var differenceInDays = Math.floor( differenceInTime / ( 1000 * 60 * 5 ) ); //added 74 since it screwed the 1 hour difference between gmt+3 and gmt+2; 
     numOfWordale = ( differenceInDays % listOfWords.length );
     //    var differenceInDays = Math.floor(differenceInTime / (1000 * 60 * 5)) + 74; //added 74 since it screwed the 1 hour difference between gmt+3 and gmt+2; 
-    return listOfWords[ differenceInDays ];
+    return listOfWords[ numOfWordale ];
 }
 
 function clickLetter( value )
